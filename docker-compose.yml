@@ -1,0 +1,13 @@
+version: '3'
+services:
+  mysql:
+    image: "public.ecr.aws/ubuntu/mysql:latest"
+    environment:
+      - MYSQL_USER=username
+      - MYSQL_PASSWORD=password
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_DATABASE=bookstoredb
+      - TZ=UTC
+    ports:
+      - "3306:3306"
+    restart: always
