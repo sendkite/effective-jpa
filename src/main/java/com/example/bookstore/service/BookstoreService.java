@@ -13,6 +13,7 @@ public class BookstoreService {
 
     private final AuthorRepository authorRepository;
 
+    @Transactional
     public void insertAuthorWithBooks() {
 
         Author author = new Author();
