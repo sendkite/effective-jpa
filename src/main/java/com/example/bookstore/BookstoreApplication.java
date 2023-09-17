@@ -27,9 +27,6 @@ public class BookstoreApplication {
 
             System.out.println("\nDelete a book of an author...");
             bookstoreService.deleteBookOfAuthor();
-
-            System.out.println("\nDelete all book of an author...");
-            bookstoreService.deleteAllBooksOfAuthor();
         };
     }
 }

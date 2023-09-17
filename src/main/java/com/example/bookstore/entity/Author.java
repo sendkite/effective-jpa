@@ -2,6 +2,7 @@ package com.example.bookstore.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
@@ -12,6 +13,7 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
+@NoArgsConstructor
 public class Author implements Serializable {
 
     private static final long serialVersionUID = 1L;
